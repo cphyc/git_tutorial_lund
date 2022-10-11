@@ -9,7 +9,7 @@ my_csv = """1,2,3
 result = []
 for line in my_csv.splitlines():
     values_as_str = line.split(",")
-    values_as_int = [int(value) for value in values_as_str]
+    values_as_int = [int(value, 2) for value in values_as_str]
 
     result.append(values_as_int)
 
